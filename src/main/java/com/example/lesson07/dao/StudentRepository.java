@@ -8,7 +8,9 @@ import com.example.lesson07.entity.StudentEntity;
 @Repository
 public interface StudentRepository extends JpaRepository<StudentEntity, Integer> {
 	// Spring Data JPA
-	// save() 메소드가 내장되어있음
+	// save(객체); 메소드가 내장되어있음
 	
-	// findById() 메소드가 내장되어있음
+	// findById(id); 메소드가 내장되어있음
+	
+	// delete(객체);
 }

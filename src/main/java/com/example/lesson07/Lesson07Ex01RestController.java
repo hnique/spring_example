@@ -36,4 +36,12 @@ public class Lesson07Ex01RestController {
 		StudentEntity student = studentBO.updateStudentDreamjobById(4, "디자이너");
 		return student;
 	}
+	
+	// D:delete
+	@GetMapping("/3")
+	public String delete() {
+		// id:4
+		studentBO.deleteStudentById(4);
+		return "삭제완료";
+	}
 }
