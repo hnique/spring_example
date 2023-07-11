@@ -25,6 +25,7 @@ import lombok.ToString;
 @AllArgsConstructor // 모든 필드를 인자값으로 받는 생성자
 @ToString // toString override 값 예쁘게 출력
 public class StudentEntity {
+	
 	@Id // 이 필드는 pk라고 알려주는 어노테이션
 	@GeneratedValue(strategy = GenerationType.IDENTITY) // auto increment
 	private int id;
